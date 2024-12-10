@@ -6,6 +6,7 @@ from .models import Movie
 from .serializers import MovieSerializer
 
 
+# Movie API CRUD
 @api_view(["GET", "POST"])
 def movie_list(request):
     if request.method == "GET":
